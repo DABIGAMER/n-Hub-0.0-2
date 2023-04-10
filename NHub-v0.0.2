@@ -1,0 +1,251 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "N Hub", HidePremium = false, IntroText = "N Hub", SaveConfig = true, ConfigFolder = "N Hub"})
+
+local TutTab = Window:MakeTab({
+
+	Name = "Main",	Icon = "rbxassetid://4483345998",
+
+	PremiumOnly = false
+
+})
+
+local Section = TutTab:AddSection({
+
+	Name = "Scripts"
+
+})
+
+TutTab:AddButton({
+
+	Name = "Arsenal silent aim",
+
+	Callback = function()
+
+function getplrsname() for i,v in pairs(game:GetChildren()) do if v.ClassName == "Players" then return v.Name end end end local players = getplrsname() local plr = game[players].LocalPlayer coroutine.resume(coroutine.create(function() while wait(1) do coroutine.resume(coroutine.create(function() for _,v in pairs(game[players]:GetPlayers()) do if v.Name ~= plr.Name and v.Character then v.Character.RightUpperLeg.CanCollide = false v.Character.RightUpperLeg.Transparency = 75 v.Character.RightUpperLeg.Size = Vector3.new(21,21,21) v.Character.LeftUpperLeg.CanCollide = false v.Character.LeftUpperLeg.Transparency = 75 v.Character.LeftUpperLeg.Size = Vector3.new(21,21,21) v.Character.HeadHB.CanCollide = false v.Character.HeadHB.Transparency = 75 v.Character.HeadHB.Size = Vector3.new(21,21,21) v.Character.HumanoidRootPart.CanCollide = false v.Character.HumanoidRootPart.Transparency = 75 v.Character.HumanoidRootPart.Size = Vector3.new(21,21,21) end end end)) end end))
+
+      		print("arsenal script executed")
+
+  	end    
+
+})
+
+local Section = TutTab:AddSection({
+
+	Name = "Speed"
+
+})
+
+TutTab:AddButton({
+
+	Name = "speed default",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 16
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to default")
+
+    end   
+
+  })
+
+  TutTab:AddButton({
+
+	Name = "speed 100",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 100
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to 100")
+
+    end
+
+  })
+
+TutTab:AddButton({
+
+	Name = "speed 200",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 200
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to 200")
+
+    end
+
+  })
+
+TutTab:AddButton({
+
+	Name = "speed 300",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 300
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to 300")
+
+    end
+
+  })
+
+TutTab:AddButton({
+
+	Name = "speed 400",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 400
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to 400")
+
+    end
+
+  })
+
+TutTab:AddButton({
+
+	Name = "speed 500",
+
+	Callback = function()
+
+      local player = game.Players.LocalPlayer
+
+local char = player.Character 
+
+     local humanoid = char:WaitForChild("Humanoid")
+
+      humanoid.WalkSpeed = 500
+
+      humanoid.JumpPower = 50
+
+      
+
+      		print("speed set to 500")
+
+    end
+
+  })
+
+local Section = TutTab:AddSection({
+
+	Name = "Guis"
+
+  })
+
+TutTab:AddButton({
+
+	Name = "IceHub",
+
+	Callback = function()
+
+loadstring(game:HttpGet('https://icehub.cf/IceHubLoader'))()
+
+      
+
+      		print("IceHub loaded")
+
+  	end    
+
+})
+
+TutTab:AddButton({
+
+	Name = "VHub",
+
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+      
+
+      		print("VHub loaded")
+
+  	end    
+
+})
+
+TutTab:AddButton({
+
+	Name = "jmemesHub psx",
+
+	Callback = function()
+
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))()
+
+      
+
+      		print("psx jmemesHub loaded")
+
+  	end    
+
+})
+
+TutTab:AddButton({
+
+	Name = "DarkHub",
+
+	Callback = function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+
+      
+
+      		print("DarkHub loaded")
+
+  	end    
+
+})
